@@ -67,3 +67,5 @@ numbers.forEach((number) => console.log(number));
 const helloWorldText = document.getElementsByTagName("h1")[0];
 helloWorldText.innerHTML = "Hello, world! This is my first JavaScript program.";
 helloWorldText.style.color = "red";
+
+document.getElemen;

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Home page</h2>
+
+    <!-- Register form -->
+    <section class="registerSection">
+      <h5>Create an Account</h5>
+      <form class="registerForm">
+        <label>Full name</label>
+        <input type="text" name="fullName" required />
+
+        <label>Email</label>
+        <input type="email" name="email" required />
+
+        <label>Password</label>
+        <input type="password" name="password" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <div id="loading">Loading, please wait...</div>
+
+    <!-- Login form -->
+    <section class="loginSection">
+      <h5>Login to continue</h5>
+      <form action="post">
+        <div id="login-message"></div>
+
+        <label>Email</label>
+        <input type="email" name="email" readonly />
+
+        <label>Password</label>
+        <input type="password" name="password" required />
+
+        <button id="loginBtn" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Dashboad -->
+    <section class="dashboard">
+      <h3>Dashboard</h3>
+      <div class="welcome-message">Welcome back John</div>
+      <h5>Users</h5>
+
+      <table>
+        <tr>
+          <th>Full name</th>
+          <th>Email</th>
+        </tr>
+
+        <tr>
+          <td>John Doe</td>
+          <td>johnd@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td>James Watt</td>
+          <td>jamesw@gmail.com</td>
+        </tr>
+      </table>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
