@@ -140,3 +140,26 @@ console.log("isElementhasA", isElementHasA);
 const namesArr2 = ["Asabeneh", "Mathias", "Elias", "Brook"];
 const searchUser = namesArr2.find((value) => value.length <= 5);
 console.log(searchUser);
+
+// reduce
+const num = [1, 2, 3];
+const total = num.reduce((acc, cur) => acc + cur, 0);
+/**
+ * first iteration
+ * acc = 0
+ * curr = 1
+ * acc + cur
+ * acc = 0 + 1 = 1
+ *
+ * 2nd iteration
+ * acc = 1
+ * curr = 2
+ * acc + cur
+ * acc = 1 + 2 = 3
+ *
+ * 3rd iteration
+ * acc = 3
+ * curr = 3
+ * acc + cur
+ * acc = 3 + 3 = 6
+ */
